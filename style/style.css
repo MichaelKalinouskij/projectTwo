@@ -179,6 +179,8 @@ body {
 }
 .content-item {
 	position: relative;
+	
+
 }
 .content-item-green {
 	background-color: rgba(177,222,55,0.9);
@@ -191,8 +193,19 @@ body {
 }
 .content-col {
 	display: inline-block;
-	width: 45%;
+	width: 42%;
 	padding-top: 16px;
+	padding-left: 19px;
+	vertical-align:top;
+}
+.content-item-blue .content-col:nth-child(1) {
+	width: 44%;
+	padding-top: 60px;
+}
+.content-item-blue .content-col:nth-child(2) {
+	margin-left: 10px;
+	width: 44%;
+	padding-top: 60px;
 }
 .article-img {
 	padding-left: 20px;
@@ -225,18 +238,13 @@ body {
 	border-radius: 60px;
 	z-index: 0;
 }
-.content-column {
-	float: left;
-	width: 275px;
-	padding-left: 55px;	
-}
-.item-b-head {
-	margin-top: 90px;
+
+.content-title {
 	padding-bottom: 20px;
 	font-size: 23px;
 	color: white;
 }
-.item-b-head-txt {
+.content-text {
 	font-size: 10px;
 	color: black;
 }
@@ -294,48 +302,45 @@ body {
 	font-size: 13px;
 	font-weight: bold;
 }
-.right-b-content {                               
+.content-info {                               
 	width: 270px;
 	padding-right: 10px;
 	line-height: 1.6;
 	color: white;
 	overflow: hidden;
 }
-.right-b-txt {
+.info-title {
 	padding-top: 20px;
 	color: black;
 	font-size: 11px;
 	font-weight: bold;
 }
-.b-txt {
+.info-text {
 	margin-top: 10px;
 	font-size: 10px;
 }
-
-.link-more{
-	margin-top: 20px;
-	display: block;
-	height: 20px;
-	padding-top: 5px;
-	background-image: url(../img/paw_icon.png);
-	background-repeat: no-repeat;
-	text-align: right;
-	font-size: 13px;
+.article-link-wrap {
+	margin-left: -8px;
+	text-align: left;
+}
+.article-link {
+	display: inline-block;
+	white-space: nowrap;
+	text-decoration: none;
 	font-weight: bold;
 	text-decoration: none;
+	font-size: 13px;
 	color: white;
 }
-.link-news {
-	width: 123px;
-	background-position: -6px 0px;
+.article-link:before {
+	content:'';
+	display: inline-block;
+	vertical-align: middle;
+	background: url(../img/paw_icon.png) 0 0 no-repeat;
+	width: 28px;
+	height: 28px;
 }
-.link-aboutus {
-	width: 101px;
-	background-position: -6px 0px;
-}
-.link-breeding {
-	width: 101px;
-	background-position: -6px -2px;
+.link-info {
 	margin-left: 162px;
 }
 .footer-content {
